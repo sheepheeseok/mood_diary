@@ -1,0 +1,10 @@
+pluginManagement {
+    repositories {
+        maven { 
+            url = uri('https://repo.spring.io/snapshot') // ← 수정됨
+        }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'mood-diary'

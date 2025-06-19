@@ -1,0 +1,44 @@
+name: mood_diary
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^0.13.5
+  shared_preferences: ^2.2.2
+  intl: ^0.20.2
+  image_picker: ^1.0.0
+  path_provider: ^2.1.2
+  fl_chart: ^0.64.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.0.4
+
+flutter:
+  uses-material-design: true
+
+  generate: true
+
+  assets:
+    - assets/images/  # 이미지 폴더 등록
+    - assets/images/emotions/
+    - assets/images/icons/
+
+flutter_native_splash:
+  background_image: assets/images/splash_background.png
+  image: assets/images/mainlogo_empty.png
+  android: false
+  ios: true
+  web: false
